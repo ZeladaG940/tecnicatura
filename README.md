@@ -154,3 +154,78 @@ cd ..
 Revisar y ejecutar cada comando, hacerlo como practica
 
 ```
+
+#clase 4
+<br> comando de la clase 4</br>
+
+```sh
+Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+
+TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+
+cd tecnicatura #abre la carperta indicada
+
+cd class-git #abre la carpeta indicada
+
+ls #mustra los archivos en una carpeta
+
+touch historia.txt @ #crea archivos basios
+
+code . #abre el editor de codigo
+
+#Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Ariel (coloca tu nombre)
+
+ctrl + s #guarda los cambios
+
+git status #mustra los archivos sin commitear
+
+git add . #agrega un archivo al area de preparacion
+
+git status #ya no mostrara el archivo ya que se agrego al area de preparacion
+
+git commit #Sin agregar -m veremos que pasa. Se abrirá el editor de texto configurado para poner un mensaje mas interactivo
+
+#Agregar mensaje y salir con -m y q para salir
+
+Esc #Presionamos Escape 
+
+:wq! + enter #Y ya salimos si estamos en git bash con window
+
+Esc + shift + z + z #Salimos del mensaje para el commit, en linux, esto anda en algunas terminales
+
+#Agregamos otra línea de mensaje en historia.txt desde VSC: estoy estudiando programación
+
+ctrl + s
+
+git add .
+
+git commit
+
+#Se abre un editor de código basado en línea de comandos, editor de texto como VSC llamado vim
+
+Esc + i #Para comenzar a escribir mensaje del commit, no suele ser necesario
+
+ctrl + x #Para salir en linux
+
+s + enter #Para decir si al cambio y aceptar el nombre, ósea no cambiamos el nombre, la (s) es de si y la (y) es de yes, no olvidar enter en linux
+
+git show #Vemos todos los cambios en el último commit
+
+git log historia.txt #Vemos todos los commit
+
+q #Para salir del registro de commits
+
+#Copiamos un hash mas antoguo y otro reciente, ingresamos el siguiente comando
+
+git diff hash_commit_numerico hash_commit_numerico #Comparamos diferentes commits y sus cambios, poner la versión mas vieja primero, luego la mas nueva
+
+q #Para salir
+
+cd ..
+
+cd ..
+
+
+
+#La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+```
