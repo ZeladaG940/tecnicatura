@@ -978,7 +978,7 @@ Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requ
 # clase 10
 <br>Comandos de la clase 10 B</br>
 
-````sh
+```sh
 Cómo funcionan las llaves públicas y privadas
 
 Sección lectura
@@ -1011,4 +1011,65 @@ PDF
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+```
+# clase 11
+<br>comandos de la clase 11</br>
+
+```sh
+#Hacemos cambios estando en la rama master, en el archivo de trabajo
+
+ctrl  + s
+
+git status
+
+git add .
+
+git commit -m"Aregando cambios nuevos al archivo de trabajo"
+
+git push origin master
+
+git log
+
+q     #Para seguir en la línea decomandos
+
+git checkout second #volvemos a la rama second
+
+git merge master #traemos los cambios desde la master y tenemos las dos ramas actualizadas
+
+git push origin second
+
+
+Ahora vamos a crear un conflicto para ver como salimos de el, vamos a cargar datos nuevos creando un archivo html estando en la rama second, y también vamos a hacer lo mismo estando en la master y veremos como lo solucionamos.
+
+
+Abrimos el archivo html y lo modificamos estando en la rama second, ctrl + s para guardar
+
+
+Luego commiteamos en la rama second y pasamos a la rama master, hacemos modificaciones también, guardar y commitear, hacer un merge estando en master: pongo en orden los comandos abajo.
+
+ctrl + s #Guardamos los cambios en la rama second, ponemos cambios en el archivo html
+
+git commit -am "Modifique el html y el color del texto" es un ejemplo
+
+git checkout master #Modificamos el html, ponemos código y ponemos texto blue
+
+ctrl + s #Guardamos los cambios
+
+git commit -am "Agregue información, cambie el código y puse todo el texto azul"
+
+git merge second #Hacemos un merge estando en master y veremos el conflicto
+
+
+Para solucionar el conflicto podemos abrir el archivo con el editor de texto y modificar lo que nos este señalando y guardamos, esto en el html, lo podemos hacer desde VSC seleccionando: el cambio entrante.
+
+
+Debemos ahora commitear estos cambios, abajo pongo los comandos.
+
+git status
+
+git commit -am "Solución de conflictos al mergear las ramas"
+
+git checkout second #Seguiremos con la versión anterior, porque el merge fue en master
+
+git merge master #Ahora pasamos los cambios a la rama second.
 ```
